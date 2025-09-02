@@ -1417,7 +1417,6 @@
                 const startTime = performance.now();
                 
                 return new Promise((resolve) => {
-                    debugger
                     const transaction = this.db.transaction([this.transcriptStoreName, this.messageStoreName], 'readonly');
                     const transcriptStore = transaction.objectStore(this.transcriptStoreName);
                     const messageStore = transaction.objectStore(this.messageStoreName);
